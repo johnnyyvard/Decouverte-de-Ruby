@@ -2,7 +2,6 @@
 #Tant que l'utilisateur ne devine pas le chiffre on lui demande d'entrer un chiffre
 
 #Première méthode avec un "while"
-
 # i = 15
 # a = 0
 # while i != a 
