@@ -1,12 +1,12 @@
-#Boucle infinie 1ère méthode
+#Boucle infinie 1ère méthode avec un loop
 # loop do 
 #     puts "Salut"
 # end
 
-#Boucle infinie 2ème méthode
+#Boucle infinie 2ème méthode épurée avec un loop
 # loop { puts "Salut"}
 
-#Boucle pour faire deviner un chiffre à l'utilisateur
+#Boucle pour faire deviner un chiffre à l'utilisateur avec un loop
 # adeviner = 15
 # a = 0
 # loop do  
@@ -22,17 +22,29 @@
 #     end
 # end
 
-adeviner = 4
-a = nil
-for num in 1..3
-    next if a == adeviner
-    puts "Entrez votre chiffre"
-    a = gets.chomp.to_i
-    if a > adeviner
-        puts "Chiffre trop grand"
-    elsif a < adeviner
-        puts "Chiffre trop petit"
-    end
-end
+#Boucle de 0 à 3 avec un times
+# 3.times do |num|
+#     puts num
+# end
 
-puts "Bravo ! Vous avez gagné" if a == adeviner
+#Itération sur tableau d'élèves avec un each
+# eleves = ["Jean", "Jacques", "Marine"]
+# eleves.each do |eleve|
+#     puts "Bonjour #{eleve}"
+# end
+
+#Itération sur tableau d'élèves avec un each épuré
+eleves = ["Jean", "Jacques", "Marine"]
+eleves.each {|eleve| puts "Bonjour #{eleve}"}
+
+#Itération sur les index du tableau d'élèves avec un each
+# eleves = ["Jean", "Jacques", "Marine"]
+# eleves.each_index do |eleve|
+#     puts "Bonjour #{eleve}"
+# end
+
+#Itération avec un each sur un hash
+marine = { age: 4, nom: "Marine", note: 14 }
+marine.each do |cle, valeur|
+    puts "#{cle}: #{valeur}"
+end
