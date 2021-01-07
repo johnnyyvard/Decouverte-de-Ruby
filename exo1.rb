@@ -1,9 +1,11 @@
+#Condition pour savoir si le chiffre est impair
 # puts "Entrez un chiffre"
 # chiffre = gets.chomp.to_i
 # if !chiffre.even?
 #     puts "Ton chiffre est impair !"
 # end
 
+#Condition pour savoir si le mot est un palyndrome
 #Demander un mot à l'utilisateur
 puts "Entrez un mot"
 #Stocker le mot dans une variable
